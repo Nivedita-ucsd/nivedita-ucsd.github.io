@@ -4,7 +4,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+    var selector = {
+        htmlCode: ".wr-share-registry-html-code",
+    
+    };
+    var config = {
+        //Html Code Embedding
+          htmlCode: null,
+    };
+
     $(".demo").click(function(){
+        config.htmlCode = $(selector.htmlCode);
+              config.htmlCode.prop("readonly", false);
+              var textInputElement = config.htmlCode[0];
+              if (textInputElement) {
+                  textInputElement.setSelectionRange(0, config.htmlCode.val().length);
+              }
+
         $(".demo").select();
         $("p").hide();
     });
@@ -17,7 +33,7 @@ $(document).ready(function(){
 
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
-<textarea class="demo" width="100px" height="200px" readonly >Click This. 
+<textarea class="wr-share-registry-html-code" width="100px" height="200px" readonly >Click This. 
 When you click this you will see that the paragraph above will get disappeared</textarea>
 
 <div style='display:table-cell; vertical-align:middle; text-align:center'><a href='https://nivedp.aka.corp.amazon.com:8443/wedding/nivedita-prasad-abc-xyz-san-diego-december-2028/registry/1PXIZCN1D0DKJ' target='_blank'><img src='https://s3-us-west-2.amazonaws.com/lambda-guestview-screenshots/screenshots/screenshots_guestview_ATVPDKIKX0DER_1PXIZCN1D0DKJ.png' width='90%' height='90%' border='1'></a></div> 
