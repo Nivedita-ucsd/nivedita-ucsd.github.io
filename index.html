@@ -17,9 +17,11 @@ $(document).ready(function(){
         config.htmlCode = $(selector.htmlCode);
               config.htmlCode.prop("readonly", false);
               var textInputElement = config.htmlCode[0];
+              console.log(textInputElement);
               if (textInputElement) {
+                  console.log(config.htmlCode.val().length);
                   textInputElement.setSelectionRange(0, config.htmlCode.val().length);
-              }
+              } 
 
         $(".demo").select();
         $("p").hide();
