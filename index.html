@@ -5,6 +5,12 @@
 <script>
 $(document).ready(function(){
     $(".demo").click(function(){
+        (".demo").prop("readonly", false);
+            var textInputElement = (".demo")[0];
+            if (textInputElement) {
+                textInputElement.setSelectionRange(0, (".demo").val().length);
+            }
+
         $(".demo").select();
         $("p").hide();
     });
