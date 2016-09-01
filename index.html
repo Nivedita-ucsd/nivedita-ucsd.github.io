@@ -3,56 +3,58 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    var selector = {
-        htmlCode: ".wr-share-registry-html-code",
+// $(document).ready(function(){
+//     var selector = {
+//         htmlCode: ".wr-share-registry-html-code",
     
-    };
-    var config = {
-        //Html Code Embedding
-          htmlCode: null,
-    };
+//     };
+//     var config = {
+//         //Html Code Embedding
+//           htmlCode: null,
+//     };
 
-    $(".wr-share-registry-html-code").click(function(){
-        config.htmlCode = $(selector.htmlCode);
-              config.htmlCode.prop("readonly", false);
-              var textInputElement = config.htmlCode[0];
-              console.log(textInputElement);
-              if (textInputElement) {
-                  console.log(config.htmlCode.val().length);
-                  textInputElement.setSelectionRange(0, config.htmlCode.val().length);
-              } 
+//     $(".wr-share-registry-html-code").click(function(){
+//         config.htmlCode = $(selector.htmlCode);
+//               config.htmlCode.prop("readonly", false);
+//               var textInputElement = config.htmlCode[0];
+//               console.log(textInputElement);
+//               if (textInputElement) {
+//                   console.log(config.htmlCode.val().length);
+//                   textInputElement.setSelectionRange(0, config.htmlCode.val().length);
+//               } 
 
-        $(".demo").select();
-        $("p").hide();
-    });
+//         $(".demo").select();
+//         $("p").hide();
+//     });
     
-    $(document).keyup(function(e) {
-          if (e.keyCode === 27) {
-              // escape key maps to keycode `27
-              $("p").hide();
-          }
-      });
-});
+//     $(document).keyup(function(e) {
+//           if (e.keyCode === 27) {
+//               // escape key maps to keycode `27
+//               $("p").hide();
+//           }
+//       });
+// });
 </script>
 </head>
 <body>
 
-<h2>This is a heading</h2>
+<h1>ABC and XYZ</h2>
 
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-<textarea class="wr-share-registry-html-code" width="100px" height="200px" readonly >Click This. 
-When you click this you will see that the paragraph above will get disappeared</textarea>
+<h2>This is an example of custom wedding website.</h2>
+<h3>Security risk in embedding.</h3>
 
+<iframe src="http://www1.macys.com/" height="1000px" width="5000px">
+
+</br>
+</br>
+
+<h3>This is how Zola does it</h3>
+</br>
+<a class="zola-registry-embed" href="https://www.zola.com/registry/niveditaandxyz" data-registry-key="niveditaandxyz">Our Zola Wedding Registry</a><script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
+
+<h3>This is how we will do it</h3>
+</br>
 <div style='display:table-cell; vertical-align:middle; text-align:center'><a href='https://www.amazon.com/wedding/saurabh-gupta-xyz-pqr-seattle-august-2016/registry/18A50ECI3H6IC' target='_blank'><img src='https://s3-us-west-2.amazonaws.com/lambda-guestview-screenshots/screenshots/screenshots_guestview_ATVPDKIKX0DER_18A50ECI3H6IC.png' width='90%' height='90%' border='1'></a></div> 
-
-<textarea class="demo" width="100px" height="200px" >Click This. 
-When you click this you will see that the paragraph above will get disappeared</textarea>
-
-<div style='display:table-cell; vertical-align:middle; text-align:center'><a href='https://www.amazon.com/wedding/saurabh-gupta-xyz-pqr-seattle-august-2016/registry/18A50ECI3H6IC' target='_blank'><img src='https://s3-us-west-2.amazonaws.com/lambda-guestview-screenshots/screenshots/screenshots_guestview_ATVPDKIKX0DER_18A50ECI3H6IC.png' width='90%' height='90%' border='1'></a></div> 
-
-
 
 </body>
 </html>
